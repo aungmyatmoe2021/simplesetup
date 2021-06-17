@@ -1,0 +1,9 @@
+{
+  "name": "simplesetup",
+  "version": "1.0.0",
+  "description": "This is the MERN Development first step.",
+  "main": "index.js",
+  "repository": "https://github.com/aungmyatmoe2021/simplesetup.git",
+  "author": "Aung Myat Moe",
+  "license": "MIT"
+}
