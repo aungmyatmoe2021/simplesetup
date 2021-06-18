@@ -5,5 +5,33 @@
   "main": "index.js",
   "repository": "https://github.com/aungmyatmoe2021/simplesetup.git",
   "author": "Aung Myat Moe",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "mongodb": "3.5.5",
+    "react-hot-loader": "4.12.20",
+    "@hot-loader/react-dom": "16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "babel-loader": "8.1.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-react": "7.9.4",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-dev-middleware": "3.7.2",
+    "webpack-hot-middleware": "2.25.0",
+    "nodemon": "2.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production  --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  }
 }
